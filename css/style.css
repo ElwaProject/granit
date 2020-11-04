@@ -1,0 +1,643 @@
+@charset "UTF-8";
+/* Обнуляющий стиль */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "GothaPro";
+	src: url("../fonts/GothaProBol.eot");
+	src: local("☺"), url("../fonts/GothaProBol.woff") format("woff"),
+		url("../fonts/GothaProBol.ttf") format("truetype"),
+		url("../fonts/GothaProBol.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "GothaPro";
+	src: url("../fonts/GothaProMed.eot");
+	src: local("☺"), url("../fonts/GothaProMed.woff") format("woff"),
+		url("../fonts/GothaProMed.ttf") format("truetype"),
+		url("../fonts/GothaProMed.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "GothaPro";
+	src: url("../fonts/GothaProReg.eot");
+	src: local("☺"), url("../fonts/GothaProReg.woff") format("woff"),
+		url("../fonts/GothaProReg.ttf") format("truetype"),
+		url("../fonts/GothaProReg.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "GothaPro";
+	src: url("../fonts/GothaProLig.eot");
+	src: local("☺"), url("../fonts/GothaProLig.woff") format("woff"),
+		url("../fonts/GothaProLig.ttf") format("truetype"),
+		url("../fonts/GothaProLig.svg") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+body {
+	font-family: "GothaPro";
+	background-image: url(../img/background_main.jpg);
+	background-repeat: no-repeat;
+	background-position: center 130px;
+	background-color: #fff;
+}
+
+.countainer {
+	width: 940px;
+	margin: auto;
+}
+
+.header {
+	padding-bottom: 27px;
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_left {
+	display: flex;
+}
+
+.header_right {
+	display: flex;
+}
+
+.logo {
+	width: 38px;
+	height: 40px;
+	margin-right: 14px;
+}
+
+.company_name {
+	font-size: 20px;
+	color: #292929;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-align: left;
+}
+
+.description {
+	font-size: 11px;
+	color: #969696;
+	line-height: 2;
+}
+
+.company_ {
+	text-align: left;
+	font-weight: 300;
+}
+
+.contact_form {
+	display: flex;
+}
+
+.tel_number {
+	font-size: 18px;
+	color: #292929;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.222;
+	text-align: right;
+}
+
+.tel_ {
+	text-align: right;
+	font-weight: 400;
+}
+
+.back_call {
+	display: block;
+	width: 158px;
+	height: 38px;
+	border: 2px solid #000;
+	background-color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	color: #292929;
+	line-height: 2.833;
+}
+
+.back_call:hover {
+	background-color: #000;
+	color: #fff;
+	box-shadow: 2px 2px 0px #969696;
+}
+
+.back_call:active {
+	position: relative;
+	left: 2px;
+	top: 2px;
+	box-shadow: none;
+}
+
+.telephone {
+	margin-right: 30px;
+	font-weight: bold;
+}
+
+.menu {
+	margin: auto;
+	background-color: #ffcc00;
+	align-items: center;
+	text-align: center;
+	display: flex;
+}
+
+.menu_items {
+	padding-top: 20px;
+	width: 150px;
+	height: 60px;
+	font-size: 14px;
+	color: black;
+	line-height: 1.571;
+	font-weight: 500;
+}
+
+.menu_items:first-child {
+	margin-left: 21px;
+}
+
+.menu_items:hover {
+	color: #ffcc00;
+	background-color: #000;
+}
+
+.title {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 36px;
+	margin-top: 133px;
+	color: #fff;
+	margin-bottom: 37px;
+}
+
+.title_description {
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
+	line-height: 1.571;
+	margin-bottom: 60px;
+}
+
+.details {
+	color: #000;
+	background-color: #ffcc00;
+	padding: 18px 30px 17px 30px;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.details:hover {
+	box-shadow: 0px 0px 30px #ffcc00;
+}
+
+.details:active {
+	position: relative;
+	left: 2px;
+	top: 2px;
+	box-shadow: none;
+}
+
+.enter_catalog {
+	margin-left: 9px;
+	font-size: 12px;
+	color: white;
+	font-weight: 500;
+}
+
+.catalog span {
+	font-weight: 300;
+	font-size: 12px;
+	color: white;
+	margin-left: 25px;
+}
+
+.enter_catalog:hover {
+	text-decoration: underline;
+}
+
+.main_screen {
+	margin-bottom: 217px;
+}
+
+.always_in_stock {
+	display: flex;
+	padding-top: 113px;
+	justify-content: space-between;
+}
+
+.goods {
+	width: 300px;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.section_title {
+	font-size: 20px;
+	color: #292929;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.goods__1 {
+	background-image: url(../img/goods/always_in_stock_1.png);
+}
+
+.goods__2 {
+	background-image: url(../img/goods/always_in_stock_2.png);
+}
+
+.goods__3 {
+	background-image: url(../img/goods/always_in_stock_3.png);
+}
+
+.block_title {
+	font-size: 15px;
+	color: #292929;
+	text-decoration: underline;
+	line-height: 1.2;
+	text-align: center;
+	font-weight: 500;
+	padding-top: 157px;
+	margin-bottom: 16px;
+}
+
+.block_description {
+	font-size: 13px;
+	color: #626262;
+	line-height: 1.2;
+	margin: auto;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 29px;
+	width: 250px;
+}
+
+.goods_price {
+	font-size: 16px;
+	font-weight: 500;
+	color: black;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.goods_button {
+	display: block;
+	padding: 0;
+	width: 180px;
+	height: 50px;
+	margin: auto;
+	margin-bottom: 113px;
+}
+
+.advantages_section {
+	background-color: #f4f4f4;
+	padding-top: 80px;
+}
+
+.advantages {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 80px;
+}
+
+.advantages_block {
+	width: 300px;
+	border: 1px solid #fff;
+	align-items: center;
+	text-align: center;
+}
+
+.advantages_block .block_title {
+	padding: 0;
+	margin-bottom: 14px;
+	text-decoration: none;
+}
+
+.advantages_block img {
+	padding-top: 38px;
+	margin-bottom: 38px;
+}
+
+.advantages_block .block_description {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #292929;
+}
+
+.advantages_block:hover {
+	background-color: white;
+	box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular_section {
+	margin-top: 82px;
+}
+
+.popular_goods {
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.popular_goods_block {
+	margin-top: 76px;
+}
+
+.popular_title {
+	font-size: 13px;
+	color: #292929;
+	text-decoration: underline;
+	line-height: 1.2;
+	text-align: center;
+	margin-top: 22px;
+}
+
+.popular_price {
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 20px;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+.red {
+	color: red;
+}
+
+.popular_goods_block .details {
+	padding: 0;
+	padding: 17px 64px 18px 64px;
+	margin-bottom: 116px;
+}
+
+.popular_price span {
+	margin-right: 10px;
+	font-size: 10px;
+	color: #979797;
+	text-decoration: line-through;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.services {
+	background-color: #f4f4f4;
+}
+.services__title {
+	padding-top: 73px;
+	margin-bottom: 57px;
+}
+.services__block {
+	width: 300px;
+	height: 250px;
+	border: 2px solid #fff;
+}
+.services__block:hover {
+	background-color: white;
+	box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.05);
+}
+.services__img {
+	display: block;
+	align-items: center;
+	margin: auto;
+	padding-top: 50px;
+}
+.services__main-block {
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	padding-bottom: 84px;
+}
+.services__block-title {
+	padding: 0;
+	margin: 0;
+	margin-top: 34px;
+}
+
+.contacts {
+	background-image: url(../icons/location.png), url(../img/background_footer.jpg);
+	height: 519px;
+	background-repeat: no-repeat;
+	background-position: 311px 228px, center top;
+	position: relative;
+}
+.contacts__elem {
+	width: 380px;
+	height: 360px;
+	background-color: #fff;
+	position: absolute;
+	right: 188px;
+	top: 80px;
+}
+.contacts__title {
+	text-align: left;
+	margin-top: 55px;
+	padding-left: 60px;
+	margin-bottom: 38px;
+}
+.contacts__tel {
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 27px;
+	line-height: 2.143;
+	background-image: url(../icons/telephone.png);
+	background-repeat: no-repeat;
+	background-position: 61px 8px;
+}
+.contacts__text {
+	font-size: 14px;
+	padding-left: 90px;
+	text-decoration: none;
+	text-align: left;
+}
+.contacts__link {
+	color: #292929;
+}
+.contacts__adress {
+	line-height: 1.2;
+	font-weight: 400;
+	margin-bottom: 38px;
+	background-repeat: no-repeat;
+	background-position: 61px 3px;
+	background-image: url(../icons/adress.png);
+}
+.contacts__mail {
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: 61px 3px;
+	background-image: url(../icons/mail.png);
+}
+
+footer {
+	background-color: #292929;
+}
+
+.footer {
+	color: #fff;
+	height: 195px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.footer__left {
+	display: flex;
+	text-align: left;
+	margin-top: 51px;
+}
+.footer__company-name {
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.1;
+	text-align: left;
+	letter-spacing: 1px;
+}
+.footer__company-description {
+	font-size: 10.5px;
+	font-weight: 300;
+}
+.footer__copyrighting {
+	font-size: 12px;
+	line-height: 1.833;
+	position: absolute;
+	top: 137px;
+	left: 1px;
+}
+.footer__right {
+	display: flex;
+	text-align: right;
+	align-items: right;
+	flex-direction: column;
+	margin-top: 46px;
+}
+.footer__telephone {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.222;
+}
+.footer__telephone-text {
+	font-size: 11px;
+	line-height: 2;
+	margin-bottom: 24px;
+}
+.footer__button {
+	display: block;
+	width: 158px;
+	height: 38px;
+	color: #fff;
+	border: 2px solid #fff;
+	background-color: #292929;
+	font-size: 12px;
+	font-weight: 500;
+	margin-left: 14px;
+	text-align: center;
+}
+.footer__button:hover {
+	background-color: #fff;
+	color: #292929;
+	box-shadow: 2px 2px 0px #969696;
+}
+.footer__button:active {
+	position: relative;
+	left: 2px;
+	top: 2px;
+	box-shadow: none;
+}
